@@ -14,7 +14,7 @@ from typing import Any, Optional
 import platform
 
 # 添加项目根目录到路径
-project_root = Path(__file__).parent.parent.parent.parent
+project_root = Path(__file__).parent.parent
 if str(project_root) not in sys.path:
     sys.path.insert(0, str(project_root))
 

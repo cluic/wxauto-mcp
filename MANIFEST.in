@@ -2,7 +2,7 @@ include README.md
 include LICENSE
 include pyproject.toml
 recursive-include src/wxauto_mcp *.py
-recursive-include core *.py
+recursive-include src/wxauto_mcp/wxauto_mcp/core *.py
 recursive-include tests *.py
 exclude .env
 exclude .env.*

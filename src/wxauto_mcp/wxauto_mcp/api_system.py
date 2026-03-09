@@ -18,12 +18,12 @@ try:
     from pathlib import Path
 
     # 添加项目根目录到路径
-    project_root = Path(__file__).parent.parent.parent.parent
+    project_root = Path(__file__).parent.parent
     if str(project_root) not in sys.path:
         sys.path.insert(0, str(project_root))
 
-    from core.wechat_wrapper import WeChatWrapper, get_wechat
-    from core.models import WeChatStatus
+    from wxauto_mcp.core.wechat_wrapper import WeChatWrapper, get_wechat
+    from wxauto_mcp.core.models import WeChatStatus
 
     WECHAT_AVAILABLE = True
 except ImportError as e:

@@ -16,11 +16,11 @@ try:
     import sys
     from pathlib import Path
 
-    project_root = Path(__file__).parent.parent.parent.parent
+    project_root = Path(__file__).parent.parent
     if str(project_root) not in sys.path:
         sys.path.insert(0, str(project_root))
 
-    from core.wechat_wrapper import get_wechat
+    from wxauto_mcp.core.wechat_wrapper import get_wechat
 
     WECHAT_AVAILABLE = True
 except ImportError as e:
@@ -96,7 +96,7 @@ def get_new_friends(acceptable: bool = True) -> str:
     name="accept_new_friend",
     description="接受新的好友请求。参数: content (好友请求内容，必填), exact (是否精确匹配，默认false), remark (备注名，可选), tags (标签列表，可选)"
 )
-def accept_new_friend(content: str, exact: bool = False, remark: Optional[str] = None, tags: Optional[List[str]] = None) -> str:
+def accept_new_friend(content: str, exact: bool = False, remark: Optional[str] = None, tags: Optional[list[str]] = None) -> str:
     """
     接受新的好友请求
 
@@ -180,7 +180,7 @@ def add_friend(
     keywords: str,
     addmsg: Optional[str] = None,
     remark: Optional[str] = None,
-    tags: Optional[List[str]] = None,
+    tags: Optional[list[str]] = None,
     permission: str = "朋友圈",
     timeout: int = 5
 ) -> str:

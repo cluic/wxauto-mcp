@@ -16,11 +16,11 @@ logger = logging.getLogger(__name__)
 try:
     import sys
 
-    project_root = Path(__file__).parent.parent.parent.parent
+    project_root = Path(__file__).parent.parent
     if str(project_root) not in sys.path:
         sys.path.insert(0, str(project_root))
 
-    from core.wechat_wrapper import get_wechat
+    from wxauto_mcp.core.wechat_wrapper import get_wechat
 
     WECHAT_AVAILABLE = True
 except ImportError as e:

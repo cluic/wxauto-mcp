@@ -3,7 +3,7 @@
 定义微信自动化相关的数据结构
 """
 
-from typing import Optional, , , Any, Literal
+from typing import Optional, Any, Literal
 from dataclasses import dataclass, field
 from enum import Enum
 

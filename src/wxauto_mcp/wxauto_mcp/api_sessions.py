@@ -16,12 +16,12 @@ try:
     import sys
     from pathlib import Path
 
-    project_root = Path(__file__).parent.parent.parent.parent
+    project_root = Path(__file__).parent.parent
     if str(project_root) not in sys.path:
         sys.path.insert(0, str(project_root))
 
-    from core.wechat_wrapper import get_wechat
-    from core.models import SessionInfo
+    from wxauto_mcp.core.wechat_wrapper import get_wechat
+    from wxauto_mcp.core.models import SessionInfo
 
     WECHAT_AVAILABLE = True
 except ImportError as e:
