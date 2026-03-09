@@ -1,0 +1,20 @@
+include README.md
+include LICENSE
+include pyproject.toml
+recursive-include src/wxauto_mcp *.py
+recursive-include core *.py
+recursive-include tests *.py
+exclude .env
+exclude .env.*
+exclude *.pyc
+exclude __pycache__
+exclude .pytest_cache
+exclude .mypy_cache
+exclude .ruff_cache
+exclude *.egg-info
+exclude .hg
+exclude .git
+exclude .gitignore
+exclude dist
+exclude build
+exclude .venv
