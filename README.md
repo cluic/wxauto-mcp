@@ -103,7 +103,7 @@ wxauto-mcp --config mcp-configs
 
 ### 1. 激活
 
-wxautox4 需要激活使用。请访问 https://wxauto.org 获取激活密钥，然后：
+wxautox4 需要激活使用。请访问 https://docs.wxauto.org 获取激活密钥，然后：
 
 ```bash
 # 设置环境变量
