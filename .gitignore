@@ -84,3 +84,4 @@ send_*.py
 
 # other
 .claude/
+*.ignore
